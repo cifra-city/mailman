@@ -4,7 +4,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/cifra-city/rest-sso/pkg/mailman/meta"
+	"github.com/cifra-city/mailman/meta"
 )
 
 func (a *Service) AddAccessForOperation(email string, operationType string, metadata meta.Data, minutes time.Duration) {

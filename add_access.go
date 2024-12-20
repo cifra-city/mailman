@@ -3,7 +3,7 @@ package mailman
 import (
 	"time"
 
-	"github.com/cifra-city/rest-sso/pkg/mailman/meta"
+	"github.com/cifra-city/mailman/meta"
 )
 
 func (m *Mailman) AddAccess(email string, operationType string, userAgent string, IP string, minutes time.Duration) {

@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cifra-city/rest-sso/pkg/mailman/meta"
+	"github.com/cifra-city/mailman/meta"
 )
 
 type Data struct {

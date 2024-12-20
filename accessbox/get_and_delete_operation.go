@@ -1,6 +1,6 @@
 package accessbox
 
-import "github.com/cifra-city/rest-sso/pkg/mailman/meta"
+import "github.com/cifra-city/mailman/meta"
 
 func (a *Service) GetAndDeleteOperation(email string, operationType string, metadata meta.Data) *Data {
 	a.mu.Lock()
