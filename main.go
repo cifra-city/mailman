@@ -29,8 +29,8 @@ type MailmanInterface interface {
 	CheckAccess(email string, operationType string, userAgent string, IP string) error
 	CheckCode(email string, operationType string, code string, userAgent string, IP string) error
 
-	DeleteCode(email string, operationType string) error
-	DeleteAccess(email string, operationType string) error
+	DeleteCode(email string, operationType string)
+	DeleteAccess(email string, operationType string)
 
 	SendList(email string, operationType string, templateList string, userAgent string, IP string, seconds time.Duration) error
 }

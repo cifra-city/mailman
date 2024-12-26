@@ -1,8 +1,6 @@
 package mailbox
 
-import "errors"
-
-func (m *Service) DeleteFromBox(email string, operationType string) error {
+func (m *Service) DeleteFromBox(email string, operationType string) {
 	m.mu.Lock()
 	defer m.mu.Unlock()
 
@@ -13,10 +11,6 @@ func (m *Service) DeleteFromBox(email string, operationType string) error {
 			if len(operations) == 0 {
 				delete(m.listCode, email)
 			}
-
-			return nil
 		}
 	}
-
-	return errors.New("no data found")
 }
